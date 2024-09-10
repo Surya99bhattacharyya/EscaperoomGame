@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(to bottom, #11004b92, #830085a1);
+    
+    background-color: #4d79fc95;
+
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px;
+}
+
+.overlay .nav-link img {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+}
+
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the banner area */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    text-align: center;
+    z-index: 1; /* Places text above the video */
+}
+
+.overlay h1 {
+    font-size: 36px; /* Adjust as needed */
+}
+
+.overlay p {
+    font-size: 20px; /* Adjust as needed */
+}
+
+.shape-divider {
+    display: block;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    position: absolute; /* Position it absolutely */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    z-index: 2; /* Ensure it appears above the video and overlay */
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+}
+
+.user-list, .user-details {
+    width: 20%; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-list h2, .user-details h2 {
+    margin-top: 0;
+}
+
+#userList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#userList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#userList img {
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px;
+}
+
+#loggedInUserDetails img {
+    width: 150px; /* Adjust size */
+    height: 150px; /* Adjust size */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px;
+}
+
+.main-content {
+    width: 60%; /* Adjust width as needed */
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.game-section, .chat-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.game-section h2, .chat-section h2 {
+    margin-top: 0;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%; /* Adjust width */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%; /* Responsive image */
+    height: auto;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+#chatBox {
+    border: 1px solid #ccc;
+    height: 200px; /* Adjust height */
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: url("chatbg.jpg") no-repeat center center/cover;
+}
+
+#chatForm {
+    display: flex;
+}
+
+#chatMessage {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#chatForm button {
+    padding: 10px;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#chatForm button img{
+    width: 30px;
+}
+
+
+
+.chat-message {
+display: flex;
+align-items: flex-start;
+margin-bottom: 10px;
+}
+
+.chat-message.my-message {
+justify-content: flex-end;
+}
+
+.chat-message.other-message {
+justify-content: flex-start;
+}
+
+.profile-pic {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.message-content {
+background: linear-gradient(to right, #d132f9bb, #222fe1);
+padding: 10px;
+border-radius: 20px;
+max-width: 60%;
+color: #f8f9fa;
+}
+
+.my-message .message-content {
+background: linear-gradient(to left, #007bff, #005ec3);
+order: 1;
+margin-left: 10px;
+}
+
+.other-message .profile-pic {
+margin-right: 10px;
+
+}
+
+.my-message .profile-pic {
+order: 2;
+margin-left: 10px;
+background-color: rgb(21, 2, 74);
+}
